@@ -97,7 +97,7 @@ function App() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="email:JOIN THE REBELLION"
+              placeholder="JOIN THE REBELLION"
               className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-2 border-[#EAE2D3]/20 focus:border-[#EAE2D3] outline-none text-[#EAE2D3] placeholder-[#EAE2D3]/50 transition-colors duration-300"
               required
             />
