@@ -21,7 +21,7 @@ function App() {
     e.preventDefault();
     
     try {
-      window.location.href = `mailto:vaibhavkulshrestha55@gmail.com?subject=New Rebel Newsletter Signup&body=New signup from: ${email}`;
+      window.location.href = `mailto:contact@therebel.org.in?subject=New Rebel Newsletter Signup&body=New signup from: ${email}`;
       setSubmitted(true);
       setEmail('');
       setTimeout(() => setSubmitted(false), 3000);
@@ -72,7 +72,7 @@ function App() {
       />
       
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4">
-       
+        
         <div className="hidden md:block absolute -top-20 -left-20 z-10">
           <TopWolfIcon />
         </div>
@@ -110,7 +110,7 @@ function App() {
           </form>
         </div>
         
-        <div className="flex space-x-4 sm:space-x-6 mb-16">
+        <div className="flex space-x-4 sm:space-x-6 mb-8 sm:mb-12 md:mb-16">
           {socialLinks.map(({ Icon, url }, index) => (
             <a
               key={index}
@@ -124,7 +124,7 @@ function App() {
           ))}
         </div>
         
-        <p className="absolute bottom-8 text-base sm:text-xl tracking-widest opacity-70 text-center px-4">
+        <p className="absolute bottom-4 sm:bottom-6 md:bottom-8 text-base sm:text-xl tracking-widest opacity-70 text-center px-4">
           DARE TO BE DIFFERENT
         </p>
       </div>
@@ -132,4 +132,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
