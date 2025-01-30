@@ -53,7 +53,7 @@ function App() {
   );
 
   const socialLinks = [
-    { Icon: FaInstagram, url: "https://www.instagram.com/reel/DFPhPJMJKwN/?igsh=MWEwMWRqcWJnYWhiag==" },
+    { Icon: FaInstagram, url: "https://www.instagram.com/therebel.org.in?igsh=MWxobHZ3aXpibXZrag==" },
     { Icon: FaTwitter, url: "https://x.com/therebel_org" },
     { Icon: FaFacebook, url: "https://www.facebook.com/profile.php?id=61572483818317" },
     { Icon: FaDiscord, url: "#" }
@@ -97,7 +97,7 @@ function App() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="JOIN THE REBELLION"
+              placeholder="email:JOIN THE REBELLION"
               className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-2 border-[#EAE2D3]/20 focus:border-[#EAE2D3] outline-none text-[#EAE2D3] placeholder-[#EAE2D3]/50 transition-colors duration-300"
               required
             />
