@@ -56,7 +56,7 @@ function App() {
     { Icon: FaInstagram, url: "https://www.instagram.com/therebel.org.in?igsh=MWxobHZ3aXpibXZrag==" },
     { Icon: FaTwitter, url: "https://x.com/therebel_org" },
     { Icon: FaFacebook, url: "https://www.facebook.com/profile.php?id=61572483818317" },
-    { Icon: FaDiscord, url: "#" }
+    { Icon: FaDiscord, url: "https://discord.gg/rQsfQxz6ev" }
   ];
 
   return (
