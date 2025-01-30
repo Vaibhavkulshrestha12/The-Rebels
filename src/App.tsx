@@ -72,7 +72,6 @@ function App() {
       />
       
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4">
-        
         <div className="hidden md:block absolute -top-20 -left-20 z-10">
           <TopWolfIcon />
         </div>
@@ -81,7 +80,6 @@ function App() {
           <CenterWolfIcon />
         </div>
 
-        
         <div className="md:hidden mb-2 sm:mb-4">
           <TopWolfIcon />
         </div>
@@ -92,18 +90,18 @@ function App() {
         </h1>
         
         <div className="w-full max-w-md mb-6 px-4 sm:px-0">
-          <form onSubmit={handleSubmit} className="relative">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row">
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="JOIN THE REBELLION"
-              className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-2 border-[#EAE2D3]/20 focus:border-[#EAE2D3] outline-none text-[#EAE2D3] placeholder-[#EAE2D3]/50 transition-colors duration-300"
+              className="flex-1 px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-2 border-[#EAE2D3]/20 focus:border-[#EAE2D3] outline-none text-[#EAE2D3] placeholder-[#EAE2D3]/50 transition-colors duration-300 sm:border-r-0"
               required
             />
             <button
               type="submit"
-              className="absolute right-0 top-0 bottom-0 px-4 sm:px-6 bg-[#EAE2D3] hover:bg-[#EAE2D3]/80 text-black transition-colors duration-300 text-sm sm:text-base"
+              className="px-6 py-3 sm:py-4 bg-[#EAE2D3] hover:bg-[#EAE2D3]/80 text-black transition-colors duration-300 text-sm sm:text-base border-2 border-[#EAE2D3] sm:border-l-0"
             >
               {submitted ? 'SENT!' : 'SUBMIT'}
             </button>
@@ -132,4 +130,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
