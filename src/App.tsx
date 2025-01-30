@@ -89,19 +89,19 @@ function App() {
           <span className="relative">COMING SOON</span>
         </h1>
         
-        <div className="w-full max-w-md mb-6 px-4 sm:px-0">
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row">
+        <div className="w-full max-w-md mb-6">
+          <form onSubmit={handleSubmit} className="flex flex-row mx-4 sm:mx-0">
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="JOIN THE REBELLION"
-              className="flex-1 px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-2 border-[#EAE2D3]/20 focus:border-[#EAE2D3] outline-none text-[#EAE2D3] placeholder-[#EAE2D3]/50 transition-colors duration-300 sm:border-r-0"
+              className="w-[60%] xs:w-[70%] sm:flex-1 px-1 xs:px-2 sm:px-6 py-3 sm:py-4 bg-transparent border-2 border-[#EAE2D3]/20 focus:border-[#EAE2D3] outline-none text-[#EAE2D3] placeholder-[#EAE2D3]/50 transition-colors duration-300 border-r-0 text-[10px] xs:text-xs sm:text-base"
               required
             />
             <button
               type="submit"
-              className="px-6 py-3 sm:py-4 bg-[#EAE2D3] hover:bg-[#EAE2D3]/80 text-black transition-colors duration-300 text-sm sm:text-base border-2 border-[#EAE2D3] sm:border-l-0"
+              className="w-[40%] xs:w-[30%] sm:w-auto px-1 xs:px-2 sm:px-6 py-3 sm:py-4 bg-[#EAE2D3] hover:bg-[#EAE2D3]/80 text-black transition-colors duration-300 text-[10px] xs:text-xs sm:text-base border-2 border-[#EAE2D3] border-l-0 whitespace-nowrap"
             >
               {submitted ? 'SENT!' : 'SUBMIT'}
             </button>
